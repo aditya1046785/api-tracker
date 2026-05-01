@@ -1,0 +1,5 @@
+# File: .gitignore (✅ Tells Git to ignore)
+
+.env
+.env.local
+node_modules/

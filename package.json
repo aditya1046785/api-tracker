@@ -1,0 +1,50 @@
+{
+  "name": "ai-usage-tracker",
+  "version": "1.0.0",
+  "description": "Tiny AI API usage tracker for token counts and model metadata.",
+  "keywords": [
+    "ai",
+    "openai",
+    "usage-tracking",
+    "tokens",
+    "analytics"
+  ],
+  "homepage": "https://github.com/aditya1046785/api-tracker#readme",
+  "bugs": {
+    "url": "https://github.com/aditya1046785/api-tracker/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aditya1046785/api-tracker.git"
+  },
+  "license": "MIT",
+  "author": "Aditya_tripathi",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./src/index.js",
+      "default": "./src/index.js",
+      "types": "./src/index.d.ts"
+    }
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    "client.js",
+    "examples.js",
+    "package.json"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "prepublishOnly": "npm test"
+  }
+}
