@@ -1,5 +1,5 @@
 {
-  "name": "ai-usage-tracker",
+  "name": "ai-metrics",
   "version": "1.0.0",
   "description": "Tiny AI API usage tracker for token counts and model metadata.",
   "keywords": [

@@ -213,7 +213,7 @@ async function example_debugMode() {
 	});
 
 	// Now all tracking calls will log:
-	// [AI-Usage-Tracker] functionName → 150+100 tokens → $0.09 (gpt-4)
+	// [AI-Metrics] functionName → 150+100 tokens → $0.09 (gpt-4)
 
 	await tracker.track({
 		usage: {

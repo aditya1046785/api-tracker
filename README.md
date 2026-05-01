@@ -32,7 +32,7 @@ Prompts, responses, API keys, and other secret-looking values are filtered out.
 ## Installation
 
 ```bash
-npm install ai-usage-tracker
+npm install ai-metrics
 ```
 
 ## Requirements
@@ -46,7 +46,7 @@ npm install ai-usage-tracker
 ### Basic Setup
 
 ```js
-const tracker = require('ai-usage-tracker');
+const tracker = require('ai-metrics');
 
 // Initialize
 tracker.init({
@@ -255,7 +255,7 @@ tracker.init({
 });
 
 // Now tracks log to console:
-// [AI-Usage-Tracker] generateResponse → 100+50 tokens → $0.09 (gpt-4)
+// [AI-Metrics] generateResponse → 100+50 tokens → $0.09 (gpt-4)
 ```
 
 ## Advanced Usage
@@ -318,7 +318,7 @@ console.log(config);
 ## Real-World Example: OpenAI Integration
 
 ```js
-const tracker = require('ai-usage-tracker');
+const tracker = require('ai-metrics');
 const OpenAI = require('openai');
 
 const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
@@ -409,7 +409,7 @@ import {
   track,
   init,
   flush,
-} from 'ai-usage-tracker';
+} from 'ai-metrics';
 
 const config: TrackerConfig = {
   apiKey: 'key',
@@ -506,7 +506,7 @@ Before publishing a new version:
 ## TypeScript
 
 ```ts
-import { init, track, TokenUsage } from 'ai-usage-tracker';
+import { init, track, TokenUsage } from 'ai-metrics';
 
 init({
 	apiKey: process.env.AI_USAGE_TRACKER_API_KEY,
@@ -541,7 +541,7 @@ await track(usage, 'gpt-4o-mini', 'summary');
 ## Initialize once or pass a key each time
 
 ```js
-const { init, track, trackResponse } = require('ai-usage-tracker');
+const { init, track, trackResponse } = require('ai-metrics');
 
 init({
 	apiKey: 'service-key',
